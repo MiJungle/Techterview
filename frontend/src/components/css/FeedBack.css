@@ -5,9 +5,31 @@
 .left-navbar {
     width: 280px;
     float: left;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .Main-body {
-    background-color: blueviolet;
+
+    box-sizing: border-box;
+    /* width: 200px; */
+    background-color: rgb(245, 245, 245);
+    padding: 0.5rem;
+    line-height: 1rem;
+    border-radius: 0.5rem;
+}
+
+.feedback-table {}
+
+.feeback-table-box {
+    width: 100%;
+}
+
+.left-text {
+    flex: auto;
+    float: left;
+}
+
+.right-text {
+    float: right;
+    margin-bottom: 15px;
 }

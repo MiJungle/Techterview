@@ -3,6 +3,8 @@ import FeedbackMenu from "../includes/FeedbackMenubar"
 // import { Link } from 'react-router-dom';
 import api from "../shared/api";
 import '../css/FeedBack.css'
+import Table from 'react-bootstrap/Table';
+
 
 function Feedback() {
     const [MainLengthCheck, SetMainLengthCheck] = useState("");
@@ -33,7 +35,6 @@ function Feedback() {
     const getCategoryFeed = async (path) => {
         await api.get(`/api/feedback/category${path}`)
             .then(res => {
-                console.log(123123);
                 SetMainLengthCheck((res.data).length)
                 SetFeedArray(res.data)
             })
@@ -48,36 +49,22 @@ function Feedback() {
             {MainLengthCheck ?
                 <div className="Main-body">
                     <div className='feedback-table'>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>순위</th>
-                                    <th>제목</th>
-                                    <th>작성자</th>
-                                    <th>좋아요 수</th>
-                                    <th>댓글 수</th>
-                                    <th>등록일</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                                {FeedArray.map((value, idx) => {
-                                    return (
-                                        <tr>
-                                            <td> {idx + 1} </td>
-                                            <a href={`/feedback/detail/${value.id}`}><td> {value.feedback_title} </td></a>
-                                            <td> {value.user_name} </td>
-                                            <td> {value.like_cnt} </td>
-                                            <td> {value.reply_cnt} </td>
-                                            <td> {YMDFormat(value.createdAt)} </td>
-                                        </tr>
-                                    )
-                                })}
-
-                            </tbody>
-                        </table>
+                        <div className='feeback-table-box'>
+                            {FeedArray.map((value, idx) => {
+                                return (
+                                    <>
+                                        <div className='left-text'> 순위 : {idx + 1}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <a style={{ textDecoration: 'none', color: "black" }} href={`/feedback/detail/${value.id}`} >
+                                            {value.feedback_title}&nbsp;&nbsp;[{value.reply_cnt}] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👍 {value.like_cnt}</a>
+                                            <p />
+                                        </div>
+                                        <div className='right-text' style={{ textAlign: "right" }}> {value.user_name} <p /> {YMDFormat(value.createdAt)}</div>
+                                    </>
+                                )
+                            })}
+                        </div>
                     </div>
-                </div> : <div className="Main-body"> 검색된 것이 없어요 알아서 하세요</div>}
+                </div> : <div className="Main-body"> 검색된 것이 없어요 알아서 하세요</div>
+            }
         </div >
     )
 }

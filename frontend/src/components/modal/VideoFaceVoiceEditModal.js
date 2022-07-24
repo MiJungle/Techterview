@@ -16,8 +16,8 @@ function VideoFaceVoiceEditModal({ closeModal }) {
                     </div>
                 </div>
                 <div className="video-edit-modal-footer">
-                    <button onClick={() => closeModal(false)} className="btn-yes">저장</button>
-                    <button className="btn-cancel">취소</button>
+                    <button className="btn-cancel">저장</button>
+                    <button onClick={() => closeModal(false)} className="btn-yes">취소</button>
                 </div>
             </div>
         </div>

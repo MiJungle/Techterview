@@ -7,12 +7,12 @@
     margin-top: 55px;
     width: 280px;
     float: left;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .Main-body {
     margin-top: 55px;
-    background-color: brown;
+    /* background-color: brown; */
     width: 75%;
     float: right;
 }
