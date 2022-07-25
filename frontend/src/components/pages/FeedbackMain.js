@@ -53,10 +53,14 @@ function Feedback() {
                             {FeedArray.map((value, idx) => {
                                 return (
                                     <>
-                                        <div className='left-text'> 순위 : {idx + 1}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <a style={{ textDecoration: 'none', color: "black" }} href={`/feedback/detail/${value.id}`} >
-                                            {value.feedback_title}&nbsp;&nbsp;[{value.reply_cnt}] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👍 {value.like_cnt}</a>
+                                        <div className='left-text'> 순위 : {idx + 1} </div>
+                                        <div style={{ float: "left" }}><a style={{ textDecoration: 'none', color: "black" }} href={`/feedback/detail/${value.id}`} >
+                                            {value.feedback_title}[{value.reply_cnt}]</a></div>
+                                        <div style={{ float: "right" }}>
+                                            👍 {value.like_cnt}
                                             <p />
                                         </div>
+                                        <p />
                                         <div className='right-text' style={{ textAlign: "right" }}> {value.user_name} <p /> {YMDFormat(value.createdAt)}</div>
                                     </>
                                 )

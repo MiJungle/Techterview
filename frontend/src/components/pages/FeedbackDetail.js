@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import jwt from "jwt-decode";
 import api from "../shared/api"
+import ReactPlayer from 'react-player'
 
 function FeedbackDetail() {
     const [DetailFeedback, SetDetailFeedback] = useState([]);
@@ -102,15 +103,17 @@ function FeedbackDetail() {
                 <div className="feedbackdetail-title">
                     <span className="feedbackdetail-title-left"> {DetailFeedback.title}</span>
                     <span className='feedbackdetail-title-right'>{DetailFeedback.name}</span>
+                    <div>
+                        <ReactPlayer controls url={DetailFeedback.recordingUrl} />
+                    </div>
                     {DetailFeedback.deletebotton ?
                         <button style={{ color: 'red', backgroundColor: 'black' }} onClick={() => { deleteFeedbackPage() }}>삭제</button>
                         : ""}
-                    {LikeStatus ? "누른상태" : "안누른상태"}
+                    {LikeStatus ? "👍" : "🖕"}
                     <button style={{ color: 'red', backgroundColor: 'black' }} onClick={() => { upLikeCnt() }}>좋아요  </button> ^_^ {FeedLikeCnt}
                 </div>
                 <div class="feedbackdetail-video-grid-container-box">
                     <div class="feedbackdetail-video-grid-box">
-                        <div class="grid-item">url : {DetailFeedback.recordingUrl}   </div>
                     </div>
                 </div>
             </div>
