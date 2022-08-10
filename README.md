@@ -1,4 +1,4 @@
-# 개발자 기술 면접 대비 사이트 Techterview
+# 개발자 기술 면접 대비 사이트 <a href="https://techterview.vercel.app/">Techterview</a>
 
 <img src = "https://user-images.githubusercontent.com/77824583/183828734-b83c537e-e5a4-4611-b0be-d7e0013832a8.png" width="700px" height="380px">
 
@@ -7,6 +7,13 @@
 - [Techterview 바로가기](https://techterview.vercel.app/)
 - [Techterview 발표영상](https://www.youtube.com/watch?v=EzYO-7wRU8Y)
 </br>
+
+---
+
+# 🎤 프로젝트 한눈에 보기
+
+<img src = "https://user-images.githubusercontent.com/77824583/183840212-ab377e3d-e6a9-431c-87a1-bf50ab2b0584.png" width="700px">
+
 
 ---
 
@@ -40,7 +47,7 @@ height="450px">
 ---
 
 # 🏋️‍♂️ Member of Techterview
-<p dir="auto"><a href="https://github.com/dongury1114"></a></p>
-<p dir="auto"><a href="https://github.com/Mijungle"></a></p>
-<p dir="auto"><a href="https://github.com/ktkdgh"></a></p>
-<p dir="auto"><a href="https://github.com/ZTeams"></a></p>
+<p dir="auto"><a href="https://github.com/dongury1114"><img width="120" src="https://img.shields.io/badge/Leader-%EC%9D%B4%EB%8F%99%EA%B7%9C-blue" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/Mijungle"><img width="120" src="https://img.shields.io/badge/Frontend-%EC%9D%B4%EB%AF%B8%EC%A0%95-skyblue" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/ktkdgh"><img width="120" src="https://img.shields.io/badge/Backend-%EA%B9%80%EC%83%81%ED%98%B8-blue" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/ZTeams"><img width="120" src="https://img.shields.io/badge/Backend-%EC%8B%AC%EC%9A%B0%EC%8B%9D-green" style="max-width: 100%;"></a></p>
