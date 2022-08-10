@@ -23,11 +23,11 @@
 
 - [핵심 기능 한눈에 보기](https://github.com/ktkdgh/Techterview/wiki/%ED%95%B5%EC%8B%AC-%EA%B8%B0%EB%8A%A5-%ED%95%9C%EB%88%88%EC%97%90-%EB%B3%B4%EA%B8%B0)  
 
-|**혼자 하기**|**함께 하기**|**답변 둘러보기**|
-|:---:|:---:|:---:|
-|![혼자 하기](url)|![함께 하기](url)|![답변 둘러보기](url)|
-
-
+|**혼자 하기**|**함께 하기**|
+|:---:|:---:|
+|![혼자하기](https://user-images.githubusercontent.com/77824583/183863032-ff68b5b4-d545-468b-b371-8fccf8df3b68.gif)|![함께하기](https://user-images.githubusercontent.com/77824583/183862637-a2ae7fbc-b281-49a1-a8a1-9b280115342c.gif)
+|**질문 담기**|**답변 둘러보기**|
+|![질문 담기](https://user-images.githubusercontent.com/77824583/183865432-3a4b567c-95d1-4e87-9f57-4b84958490ee.gif)|![답변 둘러보기](https://user-images.githubusercontent.com/77824583/183862996-9f403ab8-a925-42fb-8cd4-c2dcafbaf1f1.gif)|
 
 ---
 # ⚙ 아키텍처
@@ -40,9 +40,9 @@ height="450px">
 
 
 ---
-# 🧨 트러블 슈팅
+# 🧨 Problem & Solution
 
-- [트러블 슈팅](url)
+- [Problem & Solution](https://github.com/ktkdgh/Techterview/wiki/Problem-&-Solution)
 
 ---
 
