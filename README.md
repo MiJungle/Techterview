@@ -1,6 +1,6 @@
 # 개발자 기술 면접 대비 사이트 <a href="https://techterview.vercel.app/">Techterview</a>
 
-<img src = "https://user-images.githubusercontent.com/77824583/183828734-b83c537e-e5a4-4611-b0be-d7e0013832a8.png" width="700px" height="380px">
+<img src = "https://user-images.githubusercontent.com/77824583/183828734-b83c537e-e5a4-4611-b0be-d7e0013832a8.png" width="700px" height="450px">
 
 
 - [서비스 소개](https://github.com/ktkdgh/Techterview/wiki)
@@ -12,7 +12,7 @@
 
 # 🎤 프로젝트 한눈에 보기
 
-<img src = "https://user-images.githubusercontent.com/77824583/183840212-ab377e3d-e6a9-431c-87a1-bf50ab2b0584.png" width="700px">
+<img src = "https://user-images.githubusercontent.com/77824583/183840212-ab377e3d-e6a9-431c-87a1-bf50ab2b0584.png" width="700px" >
 
 
 ---
